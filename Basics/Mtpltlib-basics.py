@@ -60,6 +60,7 @@ plt.plot([1, 2, 3], [1, 4, 9])
 plt.grid(True)
 plt.show()
 
+
 # Sheet style
 plt.style.use("classic") # plain, minimal style
 plt.style.use("ggplot")  # grey background ,white grid
@@ -70,3 +71,4 @@ plt.style.use("grayscale") # Grey background ,bold lining
 plt.style.use("bmh") # clean modern look with dotted fade gridlines
 plt.style.use("Solarize_Light2") # soft yellow background
 plt.style.use("_mpl-gallery") # similar to solarsize ,bold lines
+
