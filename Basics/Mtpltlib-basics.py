@@ -72,3 +72,14 @@ plt.style.use("bmh") # clean modern look with dotted fade gridlines
 plt.style.use("Solarize_Light2") # soft yellow background
 plt.style.use("_mpl-gallery") # similar to solarsize ,bold lines
 
+# Layout management
+# plt.tight_layout() //prevents overlapping titles/labels
+# fig.subplots_adjust(wspace,hspace) # manual spacing
+
+# Saving figures
+# plt.savefig('plot.png,dpi = 300) # here dpi is quality of figure
+# 3 types to store   "plot.png","plot.pdf","plot.svg"
+
+#axis limits
+# ax.set_xlim(x,y)
+# ax.set_ylim(x,y)

@@ -42,12 +42,35 @@ for ax in axs.flat:
               color = 'red',
               marker = 'o')
 
+# Define style variable
+style = {"linestyle":"--", "linewidth":2, "color":"blue", "marker":"s"}
+
+fig, axs = plt.subplots(2,2, figsize=(8,6))
+axs[0,0].plot(x, np.sin(x), **style)
+axs[0,1].plot(x, np.cos(x), **style)
+axs[1,0].plot(x, np.exp(-x), **style)
+axs[1,1].plot(x, x**2, **style)
+
+# global style
+plt.style.use('seaborn')
+fig,axs = plt.subplot(2,2,figsize = (8,6))
+axs[0,0].plot(x,np.sin(x))
+axs[0,1].plot(x,np.cos(x))
 
 
+# Titles & Labels
+ax.set_title("Sine Wave")
+ax.set_xlabel("X-axis")
+ax.set_ylabel("Y-axis")
+fig.suptitle("Overall Figure Title")
 
+# Legends & Grid
+ax.plot(x, y, label="Sine")
+ax.legend()
+ax.grid(True)
 
-
-
+# Grid Layout
+fig, axs = plt.subplots(2,2, sharex=True, sharey=True, squeeze=False)
 
 
 
